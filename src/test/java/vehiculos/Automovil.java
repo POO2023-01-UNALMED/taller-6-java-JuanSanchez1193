@@ -22,5 +22,6 @@ public class Automovil extends Vehiculo {
 	public void setPuestos(int puestos) {
 		this.puestos = puestos;
 	}
+	 
 	
 }
