@@ -7,8 +7,7 @@ public class Automovil extends Vehiculo {
 		super(placa, 4, 100, nombre, precio,  peso,"FWD", fabricante);
 		this.puestos = puestos;
 		aumentarAutomovil();
-		listaDePaises.add(fabricante.getPais().getNombre());
-		listaDeFabricantes.add(fabricante.getNombre());
+		this.getFabricante().getPais();
 	}
 
 	public void aumentarAutomovil() {

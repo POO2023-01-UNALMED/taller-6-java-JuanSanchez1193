@@ -1,7 +1,6 @@
 package vehiculos;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Vehiculo {
 	private String placa;
@@ -17,8 +16,6 @@ public class Vehiculo {
 	protected static int cantAutomovil= 0;
 	protected static int cantCamion = 0;
 	protected static int cantCamioneta = 0;
-	static List<String> listaDePaises = new ArrayList<>();
-	static List<String> listaDeFabricantes = new ArrayList<>();
 	//------------------------------------//
 	
 	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, double precio, double peso,
@@ -106,48 +103,9 @@ public class Vehiculo {
 	public static void vehiculosPorTipo() {
 		System.out.println("Automoviles:" + cantAutomovil+ "\n" + "Camionetas:" + cantCamioneta +"\n"+"Camiones:" + cantCamion);
 	}
-	public static void paisMasVendedor() {
-		String masVendedor = null;
-		int conteo= 0;
-		
-		for (int i = 0; i < listaDePaises.size(); i++) {
-			String pais = listaDePaises.get(i);
-			int repeticion = 0;
-			
-			for (int j = 0; j < listaDePaises.size(); j++) {
-				if (listaDePaises.get(j).equals(pais)) {
-			          repeticion++;
-			        }
 
-			}
-		      if (repeticion > conteo) {
-		    	  conteo = repeticion;
-		          masVendedor = pais;
-		        }
-		}
-		System.out.println(masVendedor);
-	}
-	public static void fabricaMayorVentas() {
-		String masVendedor = null;
-		int conteo= 0;
-		
-		for (int i = 0; i < listaDeFabricantes.size(); i++) {
-			String pais = listaDeFabricantes.get(i);
-			int repeticion = 0;
-			
-			for (int j = 0; j < listaDeFabricantes.size(); j++) {
-				if (listaDeFabricantes.get(j).equals(pais)) {
-			          repeticion++;
-			        }
+	
 
-			}
-		      if (repeticion > conteo) {
-		    	  conteo = repeticion;
-		          masVendedor = pais;
-		        }
-		}
-		System.out.println(masVendedor);
-	}
 	
 
 }

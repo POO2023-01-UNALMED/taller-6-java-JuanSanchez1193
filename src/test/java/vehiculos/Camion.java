@@ -7,8 +7,6 @@ public class Camion extends Vehiculo{
 	    super(placa, 2, 80, nombre, precio, peso, "4X2", fabricante);
 	    this.ejes = ejes;
 		aumentarCamion();
-		listaDePaises.add(fabricante.getPais().getNombre());
-		listaDeFabricantes.add(fabricante.getNombre());
 	}
 	
 	public void aumentarCamion() {
